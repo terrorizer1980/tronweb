@@ -17,7 +17,7 @@
     },
     "husky": {
         "hooks": {
-            "pre-commit": "node ./scripts/pre-commit.js"
+            "pre-commit": "${HUSKY_GIT_PARAMS} node ./scripts/pre-commit.js"
         }
     },
     "dependencies": {

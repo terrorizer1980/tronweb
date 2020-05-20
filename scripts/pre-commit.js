@@ -3,6 +3,10 @@ const path = require('path')
 const fs = require('fs')
 const resultFile = path.resolve(__dirname, '../pre-commit-result')
 
+console.log(process.env.SKIPPRECOMMIT);
+
+return;
+
 if (!process.env.SKIPPRECOMMIT) {
 
     const chalk = require('chalk')
